@@ -10,7 +10,10 @@ export class HeaderComponent implements OnInit {
 
   constructor(private store : Store) { }
 
+  nbElementPanier = 0;
+
   ngOnInit(): void {
+    this.store.select(state=>state.panier.panier.length).subscribe (l => this.nbElementPanier = l);
   }
 
 }
