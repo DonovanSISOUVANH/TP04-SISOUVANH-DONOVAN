@@ -13,6 +13,8 @@ export class CatalogueComponent implements OnInit {
 
   constructor(private store : Store) { }
 
+  observable5$ : Observable<any> = null;
+
   ngOnInit(): void {
   }
 
