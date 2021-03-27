@@ -14,7 +14,7 @@ import { PanierState } from '../shared/states/panier-state'
 const appRoutes : Routes = [
   {path:'',component:AccueilComponent},
   {path:'compte',component:CompteComponent},
-  {path:'produits/catalogue',component:CatalogueComponent},
+  {path:'catalogue',component:CatalogueComponent},
   {path: 'produits', canActivate: [AuthGuard], loadChildren: () => import('./produits/produits.module').then(m => m.ProduitsModule)}
 ]
 
@@ -25,7 +25,7 @@ const appRoutes : Routes = [
     AccueilComponent,
     CompteComponent,
     ProduitsComponent,
-    CatalogueComponent,
+    //CatalogueComponent,
   ],
   imports: [
     BrowserModule,
