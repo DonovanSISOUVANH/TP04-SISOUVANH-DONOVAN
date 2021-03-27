@@ -13,7 +13,7 @@ const appRoutes : Routes = [
 
 @NgModule({
   declarations: [
-   //CatalogueComponent,
+   CatalogueComponent,
     DetailComponent
   ],
   imports: [
