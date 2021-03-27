@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
+import {Observable,of,from} from 'rxjs';
 import {AddReference} from '../../../shared/actions/panier.action';
 import {Reference} from '../../../shared/models/reference';
 import { PanierState } from 'src/shared/states/panier-state';
