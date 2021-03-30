@@ -11,7 +11,7 @@
     function (Request $resquest, Response $response,$args) {
         $array = [];
         $array ["nom"] =  $args['name'];
-        return $response->getBody()->write(json_encode($array));
+        return $response->getBody()->write(json_encode());
     });
 $app->run();
 
