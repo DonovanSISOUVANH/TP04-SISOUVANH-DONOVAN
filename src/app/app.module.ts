@@ -9,7 +9,7 @@ import { ProduitsComponent } from './produits/produits.component';
 import { CatalogueComponent } from './produits/catalogue/catalogue.component';
 import { AuthGuard } from './auth.guard';
 import { NgxsModule } from '@ngxs/store';
-import { PanierState } from '../shared/states/panier-state'
+import { PanierState } from '../shared/states/panier-state';
 
 const appRoutes : Routes = [
   {path:'',component:AccueilComponent},
