@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
@@ -26,7 +27,7 @@ const appRoutes : Routes = [
     ProduitsComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,HttpClientModule,
     RouterModule.forRoot(appRoutes),
     NgxsModule.forRoot ([PanierState])
   ],
