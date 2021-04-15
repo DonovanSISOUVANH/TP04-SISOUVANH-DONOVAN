@@ -11,9 +11,11 @@ import { ProduitsComponent } from './produits/produits.component';
 import { AuthGuard } from './auth.guard';
 import { NgxsModule } from '@ngxs/store';
 import { PanierState } from '../shared/states/panier-state';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes : Routes = [
   {path:'',component:AccueilComponent},
+  {path:'connexion',component:LoginComponent},
   {path:'compte',component:CompteComponent},
   {path: 'produits', canActivate: [AuthGuard], loadChildren: () => import('./produits/produits.module').then(m => m.ProduitsModule)}
 ]
@@ -25,6 +27,7 @@ const appRoutes : Routes = [
     AccueilComponent,
     CompteComponent,
     ProduitsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,FormsModule,HttpClientModule,
